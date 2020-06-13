@@ -1,0 +1,4 @@
+{"_id":{"$oid":"5c7a4c0c09acf20eca7e9b5d"},"object_id_lot":"5c746156038f338820f0ac4e","occupied":"15"}
+{"_id":{"$oid":"5c7a4c4409acf20eca7e9b5e"},"object_id_lot":"5c746156038f338820f0ac4f","occupied":"25"}
+{"_id":{"$oid":"5c7a4c9825bfd80eca54ef75"},"object_id_lot":"5c746156038f338820f0ac50","occupied":{"$numberInt":"12"}}
+{"_id":{"$oid":"5c7a52558b7eecfd6dbc0081"},"object_id_lot":"5c746156038f338820f0ac53","occupied":{"$numberInt":"12"}}

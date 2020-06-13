@@ -1,0 +1,80 @@
+
+<!DOCTYPE html>
+<head>
+</head>
+
+<body>
+
+{% block content %}
+<nav class="nav-bar"><center class="parking">Parking Management</center></nav>
+<div class="main-container">
+<form action = '{{url_for("test")}}' method="POST">
+<div class="input-container">
+<label>Card ID : {{ data }}</label>
+</div>
+<label class="bigger">Count: {{ count }},</label>
+<label class="bigger">Remaining Capacity: {{100-count}}</label>
+<div class="vehno"><label>Entering Vehicle Number: </label><input class="vehinp" type="text" name="vehi_no"></div>
+<button type="submit" name="submit">Scan Card</button>
+</form>
+<center><h1>{{action}}</h1><center>
+</div>
+{% endblock %}
+</body>
+
+</html>
+<style>
+.main-container
+{
+	width : 70%;
+	margin: 0 auto;
+	margin-top: 25px;
+
+}
+input {
+	padding: 10px;
+	margin:10px;
+}
+.input-container
+{
+	margin: 0 auto;
+}
+form{
+	text-align: center;
+}
+button{
+	padding:15px;
+}
+nav{
+	height:30px;
+	width:device-width;
+	background-color:black;
+}
+.nav-bar{
+	font-size: 22px;
+}
+.parking{
+	color:white;
+}
+
+.vehno{
+	padding:15px;
+	font-size: 40px;
+}
+
+.vehinp{
+	font-size:40px; !important
+	background-color: #dfffdf !important; 
+}
+.bigger{
+	font-size:25px;
+	font-weight:bold;
+}
+
+body{
+	background-color: lemonchiffon;
+}
+
+
+
+</style>
